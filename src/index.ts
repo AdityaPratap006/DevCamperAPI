@@ -1,1 +1,3 @@
-console.log("Hello DevCamper!");
+import { initializeServer } from './server';
+
+initializeServer();

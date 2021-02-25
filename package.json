@@ -7,7 +7,7 @@
     "watch": "tsc -w",
     "build": "rm -rf ./build/ && tsc",
     "dev": "nodemon build/index.js",
-    "start": "node build/index.js",
+    "start": "SET NODE_ENV=production && node build/index.js",
     "postinstall": "yarn build"
   },
   "repository": {
@@ -30,7 +30,8 @@
     "chalk": "^4.1.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "tslib": "^2.1.0"
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",

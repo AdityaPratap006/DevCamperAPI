@@ -105,3 +105,6 @@ dist
 
 # Builds
 build/
+
+# IDE
+.vscode/
