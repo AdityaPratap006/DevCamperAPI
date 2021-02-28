@@ -1,4 +1,4 @@
-import { RequestHandler } from 'express';
+import { RequestHandler, Request } from 'express';
 
 /**
  * @desc    Get all bootcamps
@@ -6,7 +6,10 @@ import { RequestHandler } from 'express';
  * @access  Public
  */
 export const getBootcamps: RequestHandler = (req, res, next) => {
-    res.status(200).json({ success: true, msg: 'Show all bootcamps' });
+    res.status(200).json({
+        success: true,
+        msg: 'Show all bootcamps',
+    });
 };
 
 /**
